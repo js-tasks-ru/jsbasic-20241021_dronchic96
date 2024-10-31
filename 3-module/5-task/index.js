@@ -4,8 +4,8 @@ function getMinMax(str) {
     .map(parseFloat)
     .filter((num) => !isNaN(num));
 
-  let min = Math.min(...numbers);
-  let max = Math.max(...numbers);
-
-  return { min, max };
+  return {
+    min: Math.min(...numbers),
+    max: Math.max(...numbers),
+  };
 }
